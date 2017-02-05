@@ -182,7 +182,7 @@ fancy.title "Title"
 
 Sample:
 
-If callback execution is succeeded (it returns `0`).
+If the callback execution is succeeded (it returns `0`).
 
 ```bash
 fancy.process "Processing something...\t" "callback"
@@ -193,7 +193,7 @@ fancy.process "Processing something...\t" "callback"
 > P.S: A succeeded callback execution returns `0`. That's a shellscript rule: `0` = true, `1` = false.
 > That's a little weird, I know that, but that's how it is, accept it.
 
-If callback execution fails (it returns `1`).
+If the callback execution fails (it returns `1`).
 
 ```bash
 fancy.process "Processing something...\t" "callback"
@@ -209,11 +209,11 @@ fancy.process "Processing something...\t" "callback"
 
 `param2` Callback
 
-> The callback might be a function you've written
+> The the callback might be a function you've written
 
 Sample:
 
-If callback execution is succeeded (it returns `0`).
+If the callback execution is succeeded (it returns `0`).
 
 ```bash
 fancy.prepend.process "Processing something" "callback"
@@ -221,7 +221,7 @@ fancy.prepend.process "Processing something" "callback"
 
 ![fancy.prepend.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-prepend-process-ok.png)
 
-If callback execution fails (it returns `1`).
+If the callback execution fails (it returns `1`).
 
 ```bash
 fancy.prepend.process "Processing something" "callback"
