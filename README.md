@@ -6,11 +6,11 @@ With this little module you can use some functions that allow you to show cool m
 See what is possible to do when using `fancy sh`.
 
 - Messages
-    - [Simple]() (`fancy.message`)
-    - [Red]() (`fancy.message.red`)
-    - [Green]() (`fancy.message.green`)
-    - [Blue]() (`fancy.message.blue`)
-    - [Yellow]() (`fancy.message.yellow`)
+    - [Simple](https://github.com/diogocavilha/fancy-sh#fancymessage) (`fancy.message`)
+    - [Red](https://github.com/diogocavilha/fancy-sh#fancymessagered) (`fancy.message.red`)
+    - [Green](https://github.com/diogocavilha/fancy-sh#fancymessagegreen) (`fancy.message.green`)
+    - [Blue](https://github.com/diogocavilha/fancy-sh#fancymessageblue) (`fancy.message.blue`)
+    - [Yellow](https://github.com/diogocavilha/fancy-sh#fancymessageyellow) (`fancy.message.yellow`)
 - Warnings
     - [Error]() (`fancy.message.error`)
     - [Success]() (`fancy.message.success`)
