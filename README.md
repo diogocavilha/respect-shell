@@ -20,8 +20,8 @@ See what is possible to do when using `fancy sh`.
     - [Process](https://github.com/diogocavilha/fancy-sh#fancyprocess) (`fancy.process`)
     - [Prepend Process](https://github.com/diogocavilha/fancy-sh#fancyprependprocess) (`fancy.prepend.process`)
 - Labels
-    - [Label]() (`fancy.label`)
-    - [Label in a row]() (`fancy.label.ln`)
+    - [Label](https://github.com/diogocavilha/fancy-sh#fancylabel) (`fancy.label`)
+    - [Labels in a row](https://github.com/diogocavilha/fancy-sh#fancylabelln) (`fancy.label.ln`)
 - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
 - [File exists]() (`fancy.file_exists`)
 - [Directory exists]() (`fancy.dir_exists`)
@@ -228,3 +228,39 @@ fancy.prepend.process "Processing something" "callback"
 ```
 
 ![fancy.prepend.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-prepend-process-fail.png)
+
+### fancy.label
+
+`fancy.label "param1" "param2"`
+
+`param1` Label
+
+`param2` Value
+
+Sample:
+
+```bash
+fancy.label "Label 1" "Value 1"
+fancy.label "Label 2" "Value 2"
+fancy.label "Label 3" "Value 3"
+```
+
+![fancy.label](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-label.png)
+
+### fancy.label.ln
+
+`fancy.label.ln "param1" "param2"`
+
+`param1` Label
+
+`param2` Value
+
+Sample:
+
+```bash
+fancy.label.ln "Label line 1" "Value 1"
+fancy.label.ln "\tLabel line 2" "Value 2"
+fancy.label.ln "\tLabel line 3" "Value 3"
+```
+
+![fancy.label.ln](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-label-ln.png)
