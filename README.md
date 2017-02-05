@@ -25,7 +25,7 @@ See what is possible to do when using `fancy sh`.
 - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
 - [File exists]() (`fancy.file_exists`)
 - [Directory exists]() (`fancy.dir_exists`)
-- [Root is required](https://github.com/diogocavilha/fancy-sh#fancyroot-is-required) (`fancy.root_is_required`)
+- [Root is required](https://github.com/diogocavilha/fancy-sh#fancyroot_is_required) (`fancy.root_is_required`)
 - [Die](https://github.com/diogocavilha/fancy-sh#fancydie) (`fancy.die`)
 
 ----------------------------------------------------------------
