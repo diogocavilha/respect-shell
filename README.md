@@ -22,6 +22,7 @@ See what is possible to do when using `fancy sh`.
 - Labels
     - [Label]() (`fancy.label`)
     - [Label in a row]() (`fancy.label.ln`)
+- [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
 - [File exists]() (`fancy.file_exists`)
 - [Directory exists]() (`fancy.dir_exists`)
 - [Root is required]() (`fancy.root_is_required`)
@@ -154,3 +155,17 @@ fancy.message.warning "Warning"
 ```
 
 ![fancy.message.warning](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-warning.png)
+
+### fancy.title
+
+`fancy.title "param1"`
+
+`param1` Title
+
+Sample:
+
+```bash
+fancy.title "Title"
+```
+
+![fancy.title](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-title.png)
