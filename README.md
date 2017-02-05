@@ -26,3 +26,75 @@ See what is possible to do when using `fancy sh`.
 - [Directory exists]() (`fancy.dir_exists`)
 - [Root is required]() (`fancy.root_is_required`)
 - [Die]() (`fancy.die`)
+
+----------------------------------------------------------------
+
+### fancy.message
+
+`fancy.message "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message "Normal message"
+```
+
+![fancy.message](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message.png)
+
+### fancy.message.red
+
+`fancy.message.red "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.red "Red message"
+```
+
+![fancy.message.red](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-red.png)
+
+### fancy.message.green
+
+`fancy.message.green "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.green "Green message"
+```
+
+![fancy.message.green](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-green.png)
+
+### fancy.message.blue
+
+`fancy.message.blue "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.blue "Blue message"
+```
+
+![fancy.message.blue](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-blue.png)
+
+### fancy.message.yellow
+
+`fancy.message.yellow "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.yellow "Yellow message"
+```
+
+![fancy.message.yellow](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-yellow.png)
