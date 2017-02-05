@@ -18,7 +18,7 @@ See what is possible to do when using `fancy sh`.
     - [Warning](https://github.com/diogocavilha/fancy-sh#fancymessagewarning) (`fancy.message.warning`)
 - Processes
     - [Process](https://github.com/diogocavilha/fancy-sh#fancyprocess) (`fancy.process`)
-    - [Prepend Process]() (`fancy.prepend.process`)
+    - [Prepend Process](https://github.com/diogocavilha/fancy-sh#fancyprependprocess) (`fancy.prepend.process`)
 - Labels
     - [Label]() (`fancy.label`)
     - [Label in a row]() (`fancy.label.ln`)
