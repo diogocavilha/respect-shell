@@ -1,7 +1,7 @@
 # Fancy sh
 
 This is a simple shell module for helping you to write better scripts.
-With this little module you can use some functions that allow you to show cool messages and do verifications as simple as it might be, sample: checking whether or not a directory exists.
+With this little module you can use some functions that allow you to show cool messages and do verifications as simple as it might be, **sample:** checking whether or not a directory exists.
 
 See what is possible to do when using `fancy sh`.
 
@@ -20,8 +20,8 @@ See what is possible to do when using `fancy sh`.
     - [Process](https://github.com/diogocavilha/fancy-sh#fancyprocess) (`fancy.process`)
     - [Prepend Process](https://github.com/diogocavilha/fancy-sh#fancyprependprocess) (`fancy.prepend.process`)
 - Labels
-    - [Label]() (`fancy.label`)
-    - [Label in a row]() (`fancy.label.ln`)
+    - [Label](https://github.com/diogocavilha/fancy-sh#fancylabel) (`fancy.label`)
+    - [Labels in a row](https://github.com/diogocavilha/fancy-sh#fancylabelln) (`fancy.label.ln`)
 - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
 - [File exists]() (`fancy.file_exists`)
 - [Directory exists]() (`fancy.dir_exists`)
@@ -36,9 +36,13 @@ See what is possible to do when using `fancy sh`.
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message "Normal message"
 ```
 
@@ -50,9 +54,13 @@ fancy.message "Normal message"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.red "Red message"
 ```
 
@@ -64,9 +72,13 @@ fancy.message.red "Red message"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.green "Green message"
 ```
 
@@ -78,9 +90,13 @@ fancy.message.green "Green message"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.blue "Blue message"
 ```
 
@@ -92,9 +108,13 @@ fancy.message.blue "Blue message"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.yellow "Yellow message"
 ```
 
@@ -106,9 +126,13 @@ fancy.message.yellow "Yellow message"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.error "Error"
 ```
 
@@ -120,9 +144,13 @@ fancy.message.error "Error"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.success "Success"
 ```
 
@@ -134,9 +162,13 @@ fancy.message.success "Success"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.info "Info"
 ```
 
@@ -148,9 +180,13 @@ fancy.message.info "Info"
 
 `param1` Message
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.message.warning "Warning"
 ```
 
@@ -162,9 +198,13 @@ fancy.message.warning "Warning"
 
 `param1` Title
 
-Sample:
+**Sample:**
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.title "Title"
 ```
 
@@ -180,11 +220,15 @@ fancy.title "Title"
 
 > The callback might be a function you've written
 
-Sample:
+**Sample:**
 
 If the callback execution is succeeded (it returns `0`).
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.process "Processing something...\t" "callback"
 ```
 
@@ -196,6 +240,10 @@ fancy.process "Processing something...\t" "callback"
 If the callback execution fails (it returns `1`).
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.process "Processing something...\t" "callback"
 ```
 
@@ -211,11 +259,15 @@ fancy.process "Processing something...\t" "callback"
 
 > The the callback might be a function you've written
 
-Sample:
+**Sample:**
 
 If the callback execution is succeeded (it returns `0`).
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.prepend.process "Processing something" "callback"
 ```
 
@@ -224,7 +276,55 @@ fancy.prepend.process "Processing something" "callback"
 If the callback execution fails (it returns `1`).
 
 ```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
 fancy.prepend.process "Processing something" "callback"
 ```
 
 ![fancy.prepend.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-prepend-process-fail.png)
+
+### fancy.label
+
+`fancy.label "param1" "param2"`
+
+`param1` Label
+
+`param2` Value
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+fancy.label "Label 1" "Value 1"
+fancy.label "Label 2" "Value 2"
+fancy.label "Label 3" "Value 3"
+```
+
+![fancy.label](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-label.png)
+
+### fancy.label.ln
+
+`fancy.label.ln "param1" "param2"`
+
+`param1` Label
+
+`param2` Value
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+fancy.label.ln "Label line 1" "Value 1"
+fancy.label.ln "\tLabel line 2" "Value 2"
+fancy.label.ln "\tLabel line 3" "Value 3"
+```
+
+![fancy.label.ln](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-label-ln.png)
