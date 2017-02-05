@@ -6,11 +6,11 @@ With this little module you can use some functions that allow you to show cool m
 See what is possible to do when using `fancy sh`.
 
 - Messages
-    - [Simple]() (`fancy.message`)
-    - [Red]() (`fancy.message.red`)
-    - [Green]() (`fancy.message.green`)
-    - [Blue]() (`fancy.message.blue`)
-    - [Yellow]() (`fancy.message.yellow`)
+    - [Simple](https://github.com/diogocavilha/fancy-sh#fancymessage) (`fancy.message`)
+    - [Red](https://github.com/diogocavilha/fancy-sh#fancymessagered) (`fancy.message.red`)
+    - [Green](https://github.com/diogocavilha/fancy-sh#fancymessagegreen) (`fancy.message.green`)
+    - [Blue](https://github.com/diogocavilha/fancy-sh#fancymessageblue) (`fancy.message.blue`)
+    - [Yellow](https://github.com/diogocavilha/fancy-sh#fancymessageyellow) (`fancy.message.yellow`)
 - Warnings
     - [Error]() (`fancy.message.error`)
     - [Success]() (`fancy.message.success`)
@@ -26,3 +26,75 @@ See what is possible to do when using `fancy sh`.
 - [Directory exists]() (`fancy.dir_exists`)
 - [Root is required]() (`fancy.root_is_required`)
 - [Die]() (`fancy.die`)
+
+----------------------------------------------------------------
+
+### fancy.message
+
+`fancy.message "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message "Normal message"
+```
+
+![fancy.message](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message.png)
+
+### fancy.message.red
+
+`fancy.message.red "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.red "Red message"
+```
+
+![fancy.message.red](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-red.png)
+
+### fancy.message.green
+
+`fancy.message.green "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.green "Green message"
+```
+
+![fancy.message.green](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-green.png)
+
+### fancy.message.blue
+
+`fancy.message.blue "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.blue "Blue message"
+```
+
+![fancy.message.blue](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-blue.png)
+
+### fancy.message.yellow
+
+`fancy.message.yellow "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.yellow "Yellow message"
+```
+
+![fancy.message.yellow](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-yellow.png)
