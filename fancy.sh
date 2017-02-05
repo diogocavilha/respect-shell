@@ -102,7 +102,9 @@ fancy.dir_exists() {
 fancy.root_is_required() {
     local message=${1:-You need to be root.}
     if [[ ! "$USER" = "root" ]]; then
+        echo ""
         fancy.message.info "$message"
+        echo ""
         exit 1
     fi
 }
@@ -195,6 +197,8 @@ fancy.title() {
 
 fancy.die() {
     local message=${1:-Something went wrong! Script has stoped.}
+    echo ""
     fancy.message.red "$message"
+    echo ""
     exit 1
 }
