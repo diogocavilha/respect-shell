@@ -23,8 +23,8 @@ See what is possible to do when using `fancy sh`.
     - [Label](https://github.com/diogocavilha/fancy-sh#fancylabel) (`fancy.label`)
     - [Labels in a row](https://github.com/diogocavilha/fancy-sh#fancylabelln) (`fancy.label.ln`)
 - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
-- [File exists]() (`fancy.file_exists`)
-- [Directory exists]() (`fancy.dir_exists`)
+- [File exists](https://github.com/diogocavilha/fancy-sh#fancyfile_exists) (`fancy.file_exists`)
+- [Directory exists](https://github.com/diogocavilha/fancy-sh#fancydir_exists) (`fancy.dir_exists`)
 - [Root is required](https://github.com/diogocavilha/fancy-sh#fancyroot_is_required) (`fancy.root_is_required`)
 - [Die](https://github.com/diogocavilha/fancy-sh#fancydie) (`fancy.die`)
 
@@ -368,3 +368,45 @@ fancy.die
 ```
 
 ![fancy.die](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-die.png)
+
+### fancy.dir_exists
+
+`fancy.dir_exists "param1"`
+
+`param1` path
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+if fancy.dir_exists "/path/to/directory"
+then
+    fancy.message "Directory exists"
+else
+    fancy.message "Directory does not exist"
+fi
+```
+
+### fancy.file_exists
+
+`fancy.file_exists "param1"`
+
+`param1` path
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+if fancy.file_exists "/path/to/file"
+then
+    fancy.message "File exists"
+else
+    fancy.message "File does not exist"
+fi
+```
