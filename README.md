@@ -25,8 +25,8 @@ See what is possible to do when using `fancy sh`.
 - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
 - [File exists]() (`fancy.file_exists`)
 - [Directory exists]() (`fancy.dir_exists`)
-- [Root is required]() (`fancy.root_is_required`)
-- [Die]() (`fancy.die`)
+- [Root is required](https://github.com/diogocavilha/fancy-sh#fancyroot-is-required) (`fancy.root_is_required`)
+- [Die](https://github.com/diogocavilha/fancy-sh#fancydie) (`fancy.die`)
 
 ----------------------------------------------------------------
 
@@ -328,3 +328,43 @@ fancy.label.ln "\tLabel line 3" "Value 3"
 ```
 
 ![fancy.label.ln](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-label-ln.png)
+
+### fancy.root_is_required
+
+`fancy.root_is_required "param1"`
+
+`param1` Message
+
+> param1 is optional
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+fancy.root_is_required
+```
+
+![fancy.root_is_required](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-root-is-required.png)
+
+### fancy.die
+
+`fancy.die "param1"`
+
+`param1` Message
+
+> param1 is optional
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+fancy.die
+```
+
+![fancy.die](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-die.png)
