@@ -382,12 +382,14 @@ fancy.die
 
 source /path/to/fancy.sh
 
+message="Directory does not exist"
+
 if fancy.dir_exists "/path/to/directory"
 then
-    fancy.message "Directory exists"
-else
-    fancy.message "Directory does not exist"
+    message="Directory exists"
 fi
+
+fancy.message "$message"
 ```
 
 ### fancy.file_exists
@@ -403,10 +405,12 @@ fi
 
 source /path/to/fancy.sh
 
+message="File does not exist"
+
 if fancy.file_exists "/path/to/file"
 then
-    fancy.message "File exists"
-else
-    fancy.message "File does not exist"
+    message="File exists"
 fi
+
+fancy.message "$message"
 ```
