@@ -12,10 +12,10 @@ See what is possible to do when using `fancy sh`.
     - [Blue](https://github.com/diogocavilha/fancy-sh#fancymessageblue) (`fancy.message.blue`)
     - [Yellow](https://github.com/diogocavilha/fancy-sh#fancymessageyellow) (`fancy.message.yellow`)
 - Warnings
-    - [Error]() (`fancy.message.error`)
-    - [Success]() (`fancy.message.success`)
-    - [Info]() (`fancy.message.info`)
-    - [Warning]() (`fancy.message.warning`)
+    - [Error](https://github.com/diogocavilha/fancy-sh#fancymessageerror) (`fancy.message.error`)
+    - [Success](https://github.com/diogocavilha/fancy-sh#fancymessagesuccess) (`fancy.message.success`)
+    - [Info](https://github.com/diogocavilha/fancy-sh#fancymessageinfo) (`fancy.message.info`)
+    - [Warning](https://github.com/diogocavilha/fancy-sh#fancymessagewarning) (`fancy.message.warning`)
 - Processes
     - [Process]() (`fancy.process`)
     - [Prepend Process]() (`fancy.prepend.process`)
@@ -98,3 +98,59 @@ fancy.message.yellow "Yellow message"
 ```
 
 ![fancy.message.yellow](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-yellow.png)
+
+### fancy.message.error
+
+`fancy.message.error "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.error "Error"
+```
+
+![fancy.message.error](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-error.png)
+
+### fancy.message.success
+
+`fancy.message.success "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.success "Success"
+```
+
+![fancy.message.success](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-success.png)
+
+### fancy.message.info
+
+`fancy.message.info "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.info "Info"
+```
+
+![fancy.message.info](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-info.png)
+
+### fancy.message.warning
+
+`fancy.message.warning "param1"`
+
+`param1` Message
+
+Sample:
+
+```bash
+fancy.message.warning "Warning"
+```
+
+![fancy.message.warning](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-warning.png)
