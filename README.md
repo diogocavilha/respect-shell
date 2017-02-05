@@ -17,7 +17,7 @@ See what is possible to do when using `fancy sh`.
     - [Info](https://github.com/diogocavilha/fancy-sh#fancymessageinfo) (`fancy.message.info`)
     - [Warning](https://github.com/diogocavilha/fancy-sh#fancymessagewarning) (`fancy.message.warning`)
 - Processes
-    - [Process]() (`fancy.process`)
+    - [Process](https://github.com/diogocavilha/fancy-sh#fancyprocess) (`fancy.process`)
     - [Prepend Process]() (`fancy.prepend.process`)
 - Labels
     - [Label]() (`fancy.label`)
@@ -169,3 +169,62 @@ fancy.title "Title"
 ```
 
 ![fancy.title](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-title.png)
+
+### fancy.process
+
+`fancy.process "param1" "param2"`
+
+`param1` Process label
+
+`param2` Callback
+
+> The callback might be a function you've written
+
+Sample:
+
+If callback execution is succeeded (it returns `0`).
+
+```bash
+fancy.process "Processing something...\t" "callback"
+```
+
+![fancy.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-process-ok.png)
+
+> P.S: A succeeded callback execution returns `0`. That's a shellscript rule: `0` = true, `1` = false.
+> That's a little weird, I know that, but that's how it is, accept it.
+
+If callback execution fails (it returns `1`).
+
+```bash
+fancy.process "Processing something...\t" "callback"
+```
+
+![fancy.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-process-fail.png)
+
+### fancy.prepend.process
+
+`fancy.prepend.process "param1" "param2"`
+
+`param1` Process label
+
+`param2` Callback
+
+> The callback might be a function you've written
+
+Sample:
+
+If callback execution is succeeded (it returns `0`).
+
+```bash
+fancy.prepend.process "Processing something" "callback"
+```
+
+![fancy.prepend.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-prepend-process-ok.png)
+
+If callback execution fails (it returns `1`).
+
+```bash
+fancy.prepend.process "Processing something" "callback"
+```
+
+![fancy.prepend.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-prepend-process-fail.png)
