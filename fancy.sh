@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Shellscript boilerplate for making better scripts.
-# Author: Diogo Alexsander Cavilha <diogo@agenciasys.com.br>
+# Author: Diogo Alexsander Cavilha <diogocavilha@gmail.com>
 # Date: 02.05.2017
 
 #
