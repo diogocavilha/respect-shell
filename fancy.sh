@@ -143,8 +143,10 @@ _fancy.process.fail() {
 fancy.prepend.process() {
     local label=$1
     local callback=$2
+    local yellow=$(tput bold; tput setaf 3)
+    local none=$(tput sgr0)
 
-    echo -en "\t  $label"
+    echo -en "$yellow [ WAIT ] $none$label"
 
     if eval "$callback"
     then
