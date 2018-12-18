@@ -8,62 +8,62 @@
 # Messages
 #
 
-fancy.message() {
+function fancy.message() {
     tput bold
     echo -e " $1"
     tput sgr0
 }
 
-fancy.message.red() {
+function fancy.message.red() {
     tput bold
     tput setaf 1
     echo -e " $1"
     tput sgr0
 }
 
-fancy.message.yellow() {
+function fancy.message.yellow() {
     tput bold
     tput setaf 3
     echo -e " $1"
     tput sgr0
 }
 
-fancy.message.blue() {
+function fancy.message.blue() {
     tput bold
     tput setaf 6
     echo -e " $1"
     tput sgr0
 }
 
-fancy.message.green() {
+function fancy.message.green() {
     tput bold
     tput setaf 2
     echo -e " $1"
     tput sgr0
 }
 
-fancy.message.error() {
+function fancy.message.error() {
     tput bold
     tput setaf 1
     echo -e " ✖ $1"
     tput sgr0
 }
 
-fancy.message.warning() {
+function fancy.message.warning() {
     tput bold
     tput setaf 3
     echo -e " ⚠ $1"
     tput sgr0
 }
 
-fancy.message.info() {
+function fancy.message.info() {
     tput bold
     tput setaf 6
     echo -e " ⓘ $1"
     tput sgr0
 }
 
-fancy.message.success() {
+function fancy.message.success() {
     tput bold
     tput setaf 2
     echo -e " ✔ $1"
@@ -79,7 +79,7 @@ fancy.message.success() {
 # Returned value:
 #   0 - File exists.
 #   1 - File does not exist.
-fancy.file_exists()
+function fancy.file_exists()
 {
     if [ -e "$1" ]; then
         return 0
@@ -92,14 +92,14 @@ fancy.file_exists()
 # Returned value:
 #   0 - Diretory exists.
 #   1 - Diretory does not exist.
-fancy.dir_exists() {
+function fancy.dir_exists() {
     if [ -d "$1" ]; then
         return 0
     fi
     return 1
 }
 
-fancy.root_is_required() {
+function fancy.root_is_required() {
     local message=${1:-You need to be root.}
     if [[ ! "$USER" = "root" ]]; then
         echo ""
@@ -110,7 +110,7 @@ fancy.root_is_required() {
 }
 
 # fancy.process "label" "callback"
-fancy.process() {
+function fancy.process() {
     local label=$1
     local callback=$2
 
@@ -125,14 +125,14 @@ fancy.process() {
     _fancy.process.fail
 }
 
-_fancy.process.ok() {
+function _fancy.process.ok() {
     tput bold
     tput setaf 2
     echo -e " [  OK  ]"
     tput sgr0
 }
 
-_fancy.process.fail() {
+function _fancy.process.fail() {
     tput bold
     tput setaf 1
     echo -e " [ FAIL ]"
@@ -140,7 +140,7 @@ _fancy.process.fail() {
 }
 
 # fancy.prepend.process "label" "callback"
-fancy.prepend.process() {
+function fancy.prepend.process() {
     local label=$1
     local callback=$2
     local yellow=$(tput bold; tput setaf 3)
@@ -157,21 +157,21 @@ fancy.prepend.process() {
     _fancy.prepend.process.fail
 }
 
-_fancy.prepend.process.ok() {
+function _fancy.prepend.process.ok() {
     tput bold
     tput setaf 2
     echo -e "\r [  OK  ]"
     tput sgr0
 }
 
-_fancy.prepend.process.fail() {
+function _fancy.prepend.process.fail() {
     tput bold
     tput setaf 1
     echo -e "\r [ FAIL ]"
     tput sgr0
 }
 
-fancy.label() {
+function fancy.label() {
     local label=$1
     local value=$2
     tput bold
@@ -180,7 +180,7 @@ fancy.label() {
     echo -e "$value"
 }
 
-fancy.label.ln() {
+function fancy.label.ln() {
     local label=$1
     local value=$2
     tput bold
@@ -189,7 +189,7 @@ fancy.label.ln() {
     echo -en "$value"
 }
 
-fancy.title() {
+function fancy.title() {
     local title=${1:-No title}
     tput bold
     tput setaf 3
@@ -197,10 +197,15 @@ fancy.title() {
     tput sgr0
 }
 
-fancy.die() {
+function fancy.die() {
     local message=${1:-Something went wrong! Script has stoped.}
     echo ""
     fancy.message.red "$message"
     echo ""
     exit 1
 }
+
+function fancy.window.title() {
+    printf "\e]2;$*\a";
+}
+

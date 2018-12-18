@@ -22,6 +22,8 @@ See what is possible to do when using `fancy sh`.
 - Labels
     - [Label](https://github.com/diogocavilha/fancy-sh#fancylabel) (`fancy.label`)
     - [Labels in a row](https://github.com/diogocavilha/fancy-sh#fancylabelln) (`fancy.label.ln`)
+- Window
+    - [Title](https://github.com/diogocavilha/fancy-sh#fancywindowtitle)(`fancy.window.title`)
 - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
 - [File exists](https://github.com/diogocavilha/fancy-sh#fancyfile_exists) (`fancy.file_exists`)
 - [Directory exists](https://github.com/diogocavilha/fancy-sh#fancydir_exists) (`fancy.dir_exists`)
@@ -413,4 +415,20 @@ then
 fi
 
 fancy.message "$message"
+```
+
+### fancy.window.title
+
+`fancy.window.title "param1"`
+
+`param1` Window title
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+fancy.window.title "This is the window title"
 ```

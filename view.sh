@@ -2,6 +2,9 @@
 
 source fancy.sh
 
+
+echo ""
+fancy.window.title "This is the window title"
 echo ""
 fancy.message "Normal message"
 fancy.message.red "Red message"
