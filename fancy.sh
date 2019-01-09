@@ -202,3 +202,9 @@ fancy.die() {
     echo ""
     exit 1
 }
+
+# Set the title of terminal window
+fancy.window.title()
+{
+    printf "\e]2;$*\a";
+}
