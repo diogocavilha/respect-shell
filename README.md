@@ -1,7 +1,7 @@
 # Fancy sh
 
 This is a simple shell module for helping you to write better scripts.
-With this little module you can use some functions that allow you to show cool messages and do verifications as simple as it might be, **sample:** checking whether or not a directory exists.
+With this little module you can use some functions that allow you to showing cool messages and performing verifications as simple as it should be.
 
 See what is possible to do when using `fancy sh`.
 
