@@ -45,8 +45,5 @@ fancy.label.ln "\tLabel line 3" "Value 3"
 echo ""
 echo ""
 
-# testing github actions
-ls_command=$(ls)
-
 # fancy.die "Optional message"
 # fancy.root_is_required
