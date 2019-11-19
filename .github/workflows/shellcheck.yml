@@ -1,4 +1,4 @@
-name: CI
+name: "Code Style Check"
 
 on: [push]
 
