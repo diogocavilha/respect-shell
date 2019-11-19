@@ -79,8 +79,7 @@ function fancy.message.success() {
 # Returned value:
 #   0 - File exists.
 #   1 - File does not exist.
-function fancy.file_exists()
-{
+function fancy.file_exists() {
     if [ -e "$1" ]; then
         return 0
     fi
@@ -100,7 +99,10 @@ function fancy.dir_exists() {
 }
 
 function fancy.root_is_required() {
-    local message=${1:-You need to be root.}
+    local message=""
+    
+    message=${1:-You need to be root.}
+    
     if [[ ! "$USER" = "root" ]]; then
         echo ""
         fancy.message.info "$message"
@@ -111,8 +113,11 @@ function fancy.root_is_required() {
 
 # fancy.process "label" "callback"
 function fancy.process() {
-    local label=$1
-    local callback=$2
+    local label=""
+    local callback=""
+    
+    label=$1
+    callback=$2
 
     echo -en " $label"
 
@@ -141,10 +146,15 @@ function _fancy.process.fail() {
 
 # fancy.prepend.process "label" "callback"
 function fancy.prepend.process() {
-    local label=$1
-    local callback=$2
-    local yellow=$(tput bold; tput setaf 3)
-    local none=$(tput sgr0)
+    local label=""
+    local callback=""
+    local yellow=""
+    local none=""
+    
+    label=$1
+    callback=$2
+    yellow=$(tput bold; tput setaf 3)
+    none=$(tput sgr0)
 
     echo -en "$yellow [ WAIT ] $none$label"
 
@@ -172,8 +182,12 @@ function _fancy.prepend.process.fail() {
 }
 
 function fancy.label() {
-    local label=$1
-    local value=$2
+    local label=""
+    local value=""
+    
+    label=$1
+    value=$2
+    
     tput bold
     echo -en " $label: "
     tput sgr0
@@ -181,8 +195,12 @@ function fancy.label() {
 }
 
 function fancy.label.ln() {
-    local label=$1
-    local value=$2
+    local label=""
+    local value=""
+    
+    label=$1
+    value=$2
+    
     tput bold
     echo -en " $label: "
     tput sgr0
@@ -198,7 +216,10 @@ function fancy.title() {
 }
 
 function fancy.die() {
-    local message=${1:-Something went wrong! Script has stoped.}
+    local message=""
+    
+    message=${1:-Something went wrong! Script has stoped.}
+    
     echo ""
     fancy.message.red "$message"
     echo ""
