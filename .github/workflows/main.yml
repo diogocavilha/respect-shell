@@ -13,4 +13,4 @@ jobs:
     - name: shellcheck
       uses: ludeeus/action-shellcheck@0.1.0
     - run: |
-        shellcheck view.sh
+        shellcheck *.sh
