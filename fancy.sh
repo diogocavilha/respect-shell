@@ -227,6 +227,6 @@ function fancy.die() {
 }
 
 function fancy.window.title() {
-    printf "\e]2;$*\a";
+    printf "\e]2;%s\a" "$1";
 }
 
