@@ -32,7 +32,7 @@ See what is possible to do once you're using **Respect Shell**.
 
 ---
 
-### respect.message
+## respect.message
 
 `respect.message "param1"`
 
@@ -50,7 +50,7 @@ respect.message "Normal message"
 
 ![respect.message](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message.png)
 
-### respect.message.red
+## respect.message.red
 
 `respect.message.red "param1"`
 
@@ -68,7 +68,7 @@ respect.message.red "Red message"
 
 ![respect.message.red](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-red.png)
 
-### respect.message.green
+## respect.message.green
 
 `respect.message.green "param1"`
 
@@ -86,7 +86,7 @@ respect.message.green "Green message"
 
 ![respect.message.green](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-green.png)
 
-### respect.message.blue
+## respect.message.blue
 
 `respect.message.blue "param1"`
 
@@ -104,7 +104,7 @@ respect.message.blue "Blue message"
 
 ![respect.message.blue](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-blue.png)
 
-### respect.message.yellow
+## respect.message.yellow
 
 `respect.message.yellow "param1"`
 
@@ -122,7 +122,7 @@ respect.message.yellow "Yellow message"
 
 ![respect.message.yellow](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-yellow.png)
 
-### respect.message.error
+## respect.message.error
 
 `respect.message.error "param1"`
 
@@ -140,7 +140,7 @@ respect.message.error "Error"
 
 ![respect.message.error](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-error.png)
 
-### respect.message.success
+## respect.message.success
 
 `respect.message.success "param1"`
 
@@ -158,7 +158,7 @@ respect.message.success "Success"
 
 ![respect.message.success](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-success.png)
 
-### respect.message.info
+## respect.message.info
 
 `respect.message.info "param1"`
 
@@ -176,7 +176,7 @@ respect.message.info "Info"
 
 ![respect.message.info](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-info.png)
 
-### respect.message.warning
+## respect.message.warning
 
 `respect.message.warning "param1"`
 
@@ -194,7 +194,7 @@ respect.message.warning "Warning"
 
 ![respect.message.warning](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-warning.png)
 
-### respect.title
+## respect.title
 
 `respect.title "param1"`
 
@@ -212,7 +212,7 @@ respect.title "Title"
 
 ![respect.title](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-title.png)
 
-### respect.process
+## respect.process
 
 `respect.process "param1" "param2"`
 
@@ -251,7 +251,7 @@ respect.process "Processing something...\t" "callback"
 
 ![respect.process](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-process-fail.png)
 
-### respect.prepend.process
+## respect.prepend.process
 
 `respect.prepend.process "param1" "param2"`
 
@@ -287,7 +287,7 @@ respect.prepend.process "Processing something" "callback"
 
 ![respect.prepend.process](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-prepend-process-fail.png)
 
-### respect.label
+## respect.label
 
 `respect.label "param1" "param2"`
 
@@ -309,7 +309,7 @@ respect.label "Label 3" "Value 3"
 
 ![respect.label](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-label.png)
 
-### respect.label.ln
+## respect.label.ln
 
 `respect.label.ln "param1" "param2"`
 
@@ -331,7 +331,7 @@ respect.label.ln "\tLabel line 3" "Value 3"
 
 ![respect.label.ln](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-label-ln.png)
 
-### respect.root_is_required
+## respect.root_is_required
 
 `respect.root_is_required "param1"`
 
@@ -351,7 +351,7 @@ respect.root_is_required
 
 ![respect.root_is_required](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-root-is-required.png)
 
-### respect.dir_exists
+## respect.dir_exists
 
 `respect.dir_exists "param1"`
 
@@ -370,7 +370,7 @@ then
 fi
 ```
 
-### respect.file_exists
+## respect.file_exists
 
 `respect.file_exists "param1"`
 
@@ -389,7 +389,7 @@ then
 fi
 ```
 
-### respect.window.title
+## respect.window.title
 
 `respect.window.title "param1"`
 
@@ -405,7 +405,7 @@ source /path/to/respect.sh
 respect.window.title "This is the window title"
 ```
 
-### respect.question.yesno
+## respect.question.yesno
 
 `respect.question.yesno "param1" "param2"`
 
