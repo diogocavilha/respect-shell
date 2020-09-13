@@ -242,10 +242,10 @@ function fancy.question.yesno() {
 
     tput bold
     tput setaf 6
-    read -p "? $1 ${options}: " response
+    read -r -p "? $1 ${options}: " response
     tput sgr0
 
-    if [ -z $response ]
+    if [ -z "$response" ]
     then
         response="$yesno"
     fi

@@ -441,7 +441,7 @@ fancy.window.title "This is the window title"
 
 source /path/to/fancy.sh
 
-if fancy.question "Would like to proceed?" "y"
+if fancy.question.yesno "Would like to proceed?" "y"
 then
     # code ...
 fi
@@ -452,7 +452,7 @@ fi
 **Yes** as default.
 
 ```bash
-fancy.question "Would like to proceed?" "y"
+fancy.question.yesno "Would like to proceed?" "y"
 
 # Would like to proceed? [Y/n]: 
 ```
@@ -460,7 +460,7 @@ fancy.question "Would like to proceed?" "y"
 **No** as default
 
 ```bash
-fancy.question "Would like to proceed?" "n"
+fancy.question.yesno "Would like to proceed?" "n"
 
 # Would like to proceed? [y/N]: 
 ```
@@ -468,7 +468,7 @@ fancy.question "Would like to proceed?" "n"
 **No** as default
 
 ```bash
-fancy.question "Would like to proceed?"
+fancy.question.yesno "Would like to proceed?"
 
 # Would like to proceed? [y/N]: 
 ```
