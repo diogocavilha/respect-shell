@@ -43,7 +43,7 @@ You can just git clone this repo and link `respect.sh` in your shellscript file,
 
 . /path/to/respect.sh
 
-respect.message "Normal message"
+# You are good to go now.
 ```
 
 # Features
