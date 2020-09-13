@@ -3,7 +3,7 @@
 A simple shell module for helping you to write better scripts.
 With this little module you can use some functions that allow you to showing cool messages and performing some verifications as simple as it should be.
 
-What is possible to do once you're using **Respect Shell**?.  
+What is possible to do once you're using **Respect Shell**?  
 Take a look at some features it has by now.
 
 - Messages
