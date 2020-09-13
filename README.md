@@ -1,3 +1,5 @@
+[![Shell Check](https://github.com/diogocavilha/respect-shell/workflows/Code%20Style%20Check/badge.svg)](https://github.com/diogocavilha/respect-shell/actions)
+
 ![respect.message](https://github.com/diogocavilha/respect-shell/blob/master/images/respect-shell.png)
 
 A simple shell module for helping you to write better scripts.
