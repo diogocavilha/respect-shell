@@ -1,36 +1,52 @@
 ![respect.message](https://github.com/diogocavilha/respect-shell/blob/master/images/respect-shell.png)
 
-This is a simple shell module for helping you to write better scripts.
+A simple shell module for helping you to write better scripts.
 With this little module you can use some functions that allow you to showing cool messages and performing some verifications as simple as it should be.
 
-See what is possible to do once you're using **Respect Shell**.
+What is possible to do once you're using **Respect Shell**?.  
+Take a look at some features it has by now.
 
 - Messages
-    - [Simple](https://github.com/diogocavilha/respect-shell#respectmessage) (`respect.message`)
-    - [Red](https://github.com/diogocavilha/respect-shell#respectmessagered) (`respect.message.red`)
-    - [Green](https://github.com/diogocavilha/respect-shell#respectmessagegreen) (`respect.message.green`)
-    - [Blue](https://github.com/diogocavilha/respect-shell#respectmessageblue) (`respect.message.blue`)
-    - [Yellow](https://github.com/diogocavilha/respect-shell#respectmessageyellow) (`respect.message.yellow`)
+    - [Simple](https://github.com/diogocavilha/respect-shell#respectmessage)
+    - [Red](https://github.com/diogocavilha/respect-shell#respectmessagered)
+    - [Green](https://github.com/diogocavilha/respect-shell#respectmessagegreen)
+    - [Blue](https://github.com/diogocavilha/respect-shell#respectmessageblue)
+    - [Yellow](https://github.com/diogocavilha/respect-shell#respectmessageyellow)
 - Warnings
-    - [Error](https://github.com/diogocavilha/respect-shell#respectmessageerror) (`respect.message.error`)
-    - [Success](https://github.com/diogocavilha/respect-shell#respectmessagesuccess) (`respect.message.success`)
-    - [Info](https://github.com/diogocavilha/respect-shell#respectmessageinfo) (`respect.message.info`)
-    - [Warning](https://github.com/diogocavilha/respect-shell#respectmessagewarning) (`respect.message.warning`)
+    - [Error](https://github.com/diogocavilha/respect-shell#respectmessageerror)
+    - [Success](https://github.com/diogocavilha/respect-shell#respectmessagesuccess)
+    - [Info](https://github.com/diogocavilha/respect-shell#respectmessageinfo)
+    - [Warning](https://github.com/diogocavilha/respect-shell#respectmessagewarning)
 - Processes
-    - [Process](https://github.com/diogocavilha/respect-shell#respectprocess) (`respect.process`)
-    - [Prepend Process](https://github.com/diogocavilha/respect-shell#respectprependprocess) (`respect.prepend.process`)
+    - [Process](https://github.com/diogocavilha/respect-shell#respectprocess)
+    - [Prepend Process](https://github.com/diogocavilha/respect-shell#respectprependprocess)
 - Labels
-    - [Label](https://github.com/diogocavilha/respect-shell#respectlabel) (`respect.label`)
-    - [Labels in a row](https://github.com/diogocavilha/respect-shell#respectlabelln) (`respect.label.ln`)
+    - [Label](https://github.com/diogocavilha/respect-shell#respectlabel)
+    - [Labels in a row](https://github.com/diogocavilha/respect-shell#respectlabelln)
 - Functions
-    - [Window Title](https://github.com/diogocavilha/respect-shell#respectwindowtitle) (`respect.window.title`)
-    - [Title](https://github.com/diogocavilha/respect-shell#respecttitle) (`respect.title`)
-    - [File exists](https://github.com/diogocavilha/respect-shell#respectfile_exists) (`respect.file_exists`)
-    - [Directory exists](https://github.com/diogocavilha/respect-shell#respectdir_exists) (`respect.dir_exists`)
-    - [Root is required](https://github.com/diogocavilha/respect-shell#respectroot_is_required) (`respect.root_is_required`)
-    - [Question Yes No](https://github.com/diogocavilha/respect-shell#respectquestionyesno) (`respect.question.yesno`)
+    - [Window Title](https://github.com/diogocavilha/respect-shell#respectwindowtitle)
+    - [Title](https://github.com/diogocavilha/respect-shell#respecttitle)
+    - [File exists](https://github.com/diogocavilha/respect-shell#respectfile_exists)
+    - [Directory exists](https://github.com/diogocavilha/respect-shell#respectdir_exists)
+    - [Root is required](https://github.com/diogocavilha/respect-shell#respectroot_is_required)
+    - [Question Yes No](https://github.com/diogocavilha/respect-shell#respectquestionyesno)
 
 ---
+
+# How to use it?
+
+You can just git clone this repo and link `respect.sh` in your shellscript file, like:
+
+`my_file.sh`
+```bash
+#!/bin/bash
+
+. /path/to/respect.sh
+
+respect.message "Normal message"
+```
+
+# Features
 
 ## respect.message
 
@@ -38,14 +54,14 @@ See what is possible to do once you're using **Respect Shell**.
 respect.message "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message "Normal message"
 ```
@@ -58,14 +74,14 @@ respect.message "Normal message"
 respect.message.red "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.red "Red message"
 ```
@@ -78,14 +94,14 @@ respect.message.red "Red message"
 respect.message.green "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.green "Green message"
 ```
@@ -98,14 +114,14 @@ respect.message.green "Green message"
 respect.message.blue "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.blue "Blue message"
 ```
@@ -118,14 +134,14 @@ respect.message.blue "Blue message"
 respect.message.yellow "param1"
 ````
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.yellow "Yellow message"
 ```
@@ -138,14 +154,14 @@ respect.message.yellow "Yellow message"
 respect.message.error "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.error "Error"
 ```
@@ -158,14 +174,14 @@ respect.message.error "Error"
 respect.message.success "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.success "Success"
 ```
@@ -178,14 +194,14 @@ respect.message.success "Success"
 respect.message.info "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.info "Info"
 ```
@@ -198,14 +214,14 @@ respect.message.info "Info"
 respect.message.warning "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.message.warning "Warning"
 ```
@@ -218,14 +234,14 @@ respect.message.warning "Warning"
 respect.title "param1"
 ```
 
-`param1` Title
+- `param1` Title
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.title "Title"
 ```
@@ -238,9 +254,8 @@ respect.title "Title"
 respect.process "param1" "param2"
 ```
 
-`param1` Process label
-
-`param2` Callback
+- `param1` Process label
+- `param2` Callback
 
 > The callback might be a function you've written
 
@@ -251,7 +266,7 @@ If the callback execution is succeeded (it returns `0`).
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.process "Processing something...\t" "callback"
 ```
@@ -266,7 +281,7 @@ If the callback execution fails (it returns `1`).
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.process "Processing something...\t" "callback"
 ```
@@ -279,9 +294,8 @@ respect.process "Processing something...\t" "callback"
 respect.prepend.process "param1" "param2"
 ```
 
-`param1` Process label
-
-`param2` Callback
+- `param1` Process label
+- `param2` Callback
 
 > The the callback might be a function you've written
 
@@ -292,7 +306,7 @@ If the callback execution is succeeded (it returns `0`).
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.prepend.process "Processing something" "callback"
 ```
@@ -304,7 +318,7 @@ If the callback execution fails (it returns `1`).
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.prepend.process "Processing something" "callback"
 ```
@@ -317,16 +331,15 @@ respect.prepend.process "Processing something" "callback"
 respect.label "param1" "param2"
 ```
 
-`param1` Label
-
-`param2` Value
+- `param1` Label
+- `param2` Value
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.label "Label 1" "Value 1"
 respect.label "Label 2" "Value 2"
@@ -341,16 +354,15 @@ respect.label "Label 3" "Value 3"
 respect.label.ln "param1" "param2"
 ```
 
-`param1` Label
-
-`param2` Value
+- `param1` Label
+- `param2` Value
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.label.ln "Label line 1" "Value 1"
 respect.label.ln "\tLabel line 2" "Value 2"
@@ -365,7 +377,7 @@ respect.label.ln "\tLabel line 3" "Value 3"
 respect.root_is_required "param1"
 ```
 
-`param1` Message
+- `param1` Message
 
 > param1 is optional
 
@@ -374,7 +386,7 @@ respect.root_is_required "param1"
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.root_is_required
 ```
@@ -387,14 +399,14 @@ respect.root_is_required
 respect.dir_exists "param1"
 ```
 
-`param1` path
+- `param1` path
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 if respect.dir_exists "/path/to/directory"
 then
@@ -408,14 +420,14 @@ fi
 respect.file_exists "param1"
 ```
 
-`param1` path
+- `param1` path
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 if respect.file_exists "/path/to/file"
 then
@@ -429,14 +441,14 @@ fi
 respect.window.title "param1"
 ```
 
-`param1` Window title
+- `param1` Window title
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 respect.window.title "This is the window title"
 ```
@@ -447,16 +459,15 @@ respect.window.title "This is the window title"
 respect.question.yesno "param1" "param2"
 ```
 
-`param1` Question string.
-
-`param2` Default answer: `y` or `n`. Its optional. If not present, the default answer is `n`.
+- `param1` Question string.
+- `param2` (Optional) Default answer. It could be `y` or `n`. If not present, the default answer is `n`.
 
 **Sample:**
 
 ```bash
 #!/bin/bash
 
-source /path/to/respect.sh
+. /path/to/respect.sh
 
 if respect.question.yesno "Would you like to proceed?" "y"
 then
