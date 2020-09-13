@@ -218,7 +218,7 @@ function fancy.title() {
 function fancy.die() {
     local message=""
     
-    message=${1:-Something went wrong! Script has stoped.}
+    message=${1:-Something went wrong! Script has stopped.}
     
     echo ""
     fancy.message.red "$message"
@@ -230,3 +230,30 @@ function fancy.window.title() {
     printf "\e]2;%s\a" "$1";
 }
 
+function fancy.question.yesno() {
+    local yesno=${2:-n}
+    local options="[y/N]"
+    local response=""
+
+    if [[ "$yesno" =~ ["yY"] ]]
+    then
+        options="[Y/n]"
+    fi
+
+    tput bold
+    tput setaf 6
+    read -p "? $1 ${options}: " response
+    tput sgr0
+
+    if [ -z $response ]
+    then
+        response="$yesno"
+    fi
+
+    if [[ "$response" =~ ["yY"] ]]
+    then
+        return 0
+    fi
+
+    return 1
+}

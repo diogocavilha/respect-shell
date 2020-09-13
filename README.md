@@ -22,15 +22,16 @@ See what is possible to do when using `fancy sh`.
 - Labels
     - [Label](https://github.com/diogocavilha/fancy-sh#fancylabel) (`fancy.label`)
     - [Labels in a row](https://github.com/diogocavilha/fancy-sh#fancylabelln) (`fancy.label.ln`)
-- Window
-    - [Title](https://github.com/diogocavilha/fancy-sh#fancywindowtitle) (`fancy.window.title`)
-- [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
-- [File exists](https://github.com/diogocavilha/fancy-sh#fancyfile_exists) (`fancy.file_exists`)
-- [Directory exists](https://github.com/diogocavilha/fancy-sh#fancydir_exists) (`fancy.dir_exists`)
-- [Root is required](https://github.com/diogocavilha/fancy-sh#fancyroot_is_required) (`fancy.root_is_required`)
-- [Die](https://github.com/diogocavilha/fancy-sh#fancydie) (`fancy.die`)
+- Functions
+    - [Window Title](https://github.com/diogocavilha/fancy-sh#fancywindowtitle) (`fancy.window.title`)
+    - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
+    - [File exists](https://github.com/diogocavilha/fancy-sh#fancyfile_exists) (`fancy.file_exists`)
+    - [Directory exists](https://github.com/diogocavilha/fancy-sh#fancydir_exists) (`fancy.dir_exists`)
+    - [Root is required](https://github.com/diogocavilha/fancy-sh#fancyroot_is_required) (`fancy.root_is_required`)
+    - [Question Yes No](https://github.com/diogocavilha/fancy-sh#fancyquestionyesno) (`fancy.question.yesno`)
+    - [Die](https://github.com/diogocavilha/fancy-sh#fancydie) (`fancy.die`)
 
-----------------------------------------------------------------
+---
 
 ### fancy.message
 
@@ -384,14 +385,10 @@ fancy.die
 
 source /path/to/fancy.sh
 
-message="Directory does not exist"
-
 if fancy.dir_exists "/path/to/directory"
 then
-    message="Directory exists"
+    # code ...
 fi
-
-fancy.message "$message"
 ```
 
 ### fancy.file_exists
@@ -407,14 +404,10 @@ fancy.message "$message"
 
 source /path/to/fancy.sh
 
-message="File does not exist"
-
 if fancy.file_exists "/path/to/file"
 then
-    message="File exists"
+    # code ...
 fi
-
-fancy.message "$message"
 ```
 
 ### fancy.window.title
@@ -431,4 +424,51 @@ fancy.message "$message"
 source /path/to/fancy.sh
 
 fancy.window.title "This is the window title"
+```
+
+### fancy.question.yesno
+
+`fancy.question.yesno "param1" "param2"`
+
+`param1` Question string.
+
+`param2` Default answer: `y` or `n`. Its optional. If not present, the default answer is `n`.
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/fancy.sh
+
+if fancy.question "Would like to proceed?" "y"
+then
+    # code ...
+fi
+```
+
+**Outputs**
+
+**Yes** as default.
+
+```bash
+fancy.question "Would like to proceed?" "y"
+
+# Would like to proceed? [Y/n]: 
+```
+
+**No** as default
+
+```bash
+fancy.question "Would like to proceed?" "n"
+
+# Would like to proceed? [y/N]: 
+```
+
+**No** as default
+
+```bash
+fancy.question "Would like to proceed?"
+
+# Would like to proceed? [y/N]: 
 ```
