@@ -451,3 +451,13 @@ respect.question.yesno "Would you like to proceed?"
 
 # Would you like to proceed? [y/N]: 
 ```
+
+# Contributing :rocket:
+
+- Give this project a star :star:
+- Fork the project.
+- Create a branch. (`git checkout -b your-branch-name`).
+- Make your changes on the branch you've just created.
+- Commit it.
+- Push it.
+- Send your Pull Request.
