@@ -1,59 +1,40 @@
-# Fancy sh
+![respect.message](https://github.com/diogocavilha/respect-shell/blob/master/images/respect-shell.png)
 
 This is a simple shell module for helping you to write better scripts.
-With this little module you can use some functions that allow you to showing cool messages and performing verifications as simple as it should be.
+With this little module you can use some functions that allow you to showing cool messages and performing some verifications as simple as it should be.
 
-See what is possible to do when using `fancy sh`.
+See what is possible to do once you're using **Respect Shell**.
 
 - Messages
-    - [Simple](https://github.com/diogocavilha/fancy-sh#fancymessage) (`fancy.message`)
-    - [Red](https://github.com/diogocavilha/fancy-sh#fancymessagered) (`fancy.message.red`)
-    - [Green](https://github.com/diogocavilha/fancy-sh#fancymessagegreen) (`fancy.message.green`)
-    - [Blue](https://github.com/diogocavilha/fancy-sh#fancymessageblue) (`fancy.message.blue`)
-    - [Yellow](https://github.com/diogocavilha/fancy-sh#fancymessageyellow) (`fancy.message.yellow`)
+    - [Simple](https://github.com/diogocavilha/respect-shell#respectmessage) (`respect.message`)
+    - [Red](https://github.com/diogocavilha/respect-shell#respectmessagered) (`respect.message.red`)
+    - [Green](https://github.com/diogocavilha/respect-shell#respectmessagegreen) (`respect.message.green`)
+    - [Blue](https://github.com/diogocavilha/respect-shell#respectmessageblue) (`respect.message.blue`)
+    - [Yellow](https://github.com/diogocavilha/respect-shell#respectmessageyellow) (`respect.message.yellow`)
 - Warnings
-    - [Error](https://github.com/diogocavilha/fancy-sh#fancymessageerror) (`fancy.message.error`)
-    - [Success](https://github.com/diogocavilha/fancy-sh#fancymessagesuccess) (`fancy.message.success`)
-    - [Info](https://github.com/diogocavilha/fancy-sh#fancymessageinfo) (`fancy.message.info`)
-    - [Warning](https://github.com/diogocavilha/fancy-sh#fancymessagewarning) (`fancy.message.warning`)
+    - [Error](https://github.com/diogocavilha/respect-shell#respectmessageerror) (`respect.message.error`)
+    - [Success](https://github.com/diogocavilha/respect-shell#respectmessagesuccess) (`respect.message.success`)
+    - [Info](https://github.com/diogocavilha/respect-shell#respectmessageinfo) (`respect.message.info`)
+    - [Warning](https://github.com/diogocavilha/respect-shell#respectmessagewarning) (`respect.message.warning`)
 - Processes
-    - [Process](https://github.com/diogocavilha/fancy-sh#fancyprocess) (`fancy.process`)
-    - [Prepend Process](https://github.com/diogocavilha/fancy-sh#fancyprependprocess) (`fancy.prepend.process`)
+    - [Process](https://github.com/diogocavilha/respect-shell#respectprocess) (`respect.process`)
+    - [Prepend Process](https://github.com/diogocavilha/respect-shell#respectprependprocess) (`respect.prepend.process`)
 - Labels
-    - [Label](https://github.com/diogocavilha/fancy-sh#fancylabel) (`fancy.label`)
-    - [Labels in a row](https://github.com/diogocavilha/fancy-sh#fancylabelln) (`fancy.label.ln`)
+    - [Label](https://github.com/diogocavilha/respect-shell#respectlabel) (`respect.label`)
+    - [Labels in a row](https://github.com/diogocavilha/respect-shell#respectlabelln) (`respect.label.ln`)
 - Functions
-    - [Window Title](https://github.com/diogocavilha/fancy-sh#fancywindowtitle) (`fancy.window.title`)
-    - [Title](https://github.com/diogocavilha/fancy-sh#fancytitle) (`fancy.title`)
-    - [File exists](https://github.com/diogocavilha/fancy-sh#fancyfile_exists) (`fancy.file_exists`)
-    - [Directory exists](https://github.com/diogocavilha/fancy-sh#fancydir_exists) (`fancy.dir_exists`)
-    - [Root is required](https://github.com/diogocavilha/fancy-sh#fancyroot_is_required) (`fancy.root_is_required`)
-    - [Question Yes No](https://github.com/diogocavilha/fancy-sh#fancyquestionyesno) (`fancy.question.yesno`)
-    - [Die](https://github.com/diogocavilha/fancy-sh#fancydie) (`fancy.die`)
+    - [Window Title](https://github.com/diogocavilha/respect-shell#respectwindowtitle) (`respect.window.title`)
+    - [Title](https://github.com/diogocavilha/respect-shell#respecttitle) (`respect.title`)
+    - [File exists](https://github.com/diogocavilha/respect-shell#respectfile_exists) (`respect.file_exists`)
+    - [Directory exists](https://github.com/diogocavilha/respect-shell#respectdir_exists) (`respect.dir_exists`)
+    - [Root is required](https://github.com/diogocavilha/respect-shell#respectroot_is_required) (`respect.root_is_required`)
+    - [Question Yes No](https://github.com/diogocavilha/respect-shell#respectquestionyesno) (`respect.question.yesno`)
 
 ---
 
-### fancy.message
+### respect.message
 
-`fancy.message "param1"`
-
-`param1` Message
-
-**Sample:**
-
-```bash
-#!/bin/bash
-
-source /path/to/fancy.sh
-
-fancy.message "Normal message"
-```
-
-![fancy.message](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message.png)
-
-### fancy.message.red
-
-`fancy.message.red "param1"`
+`respect.message "param1"`
 
 `param1` Message
 
@@ -62,16 +43,16 @@ fancy.message "Normal message"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.red "Red message"
+respect.message "Normal message"
 ```
 
-![fancy.message.red](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-red.png)
+![respect.message](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message.png)
 
-### fancy.message.green
+### respect.message.red
 
-`fancy.message.green "param1"`
+`respect.message.red "param1"`
 
 `param1` Message
 
@@ -80,16 +61,16 @@ fancy.message.red "Red message"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.green "Green message"
+respect.message.red "Red message"
 ```
 
-![fancy.message.green](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-green.png)
+![respect.message.red](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-red.png)
 
-### fancy.message.blue
+### respect.message.green
 
-`fancy.message.blue "param1"`
+`respect.message.green "param1"`
 
 `param1` Message
 
@@ -98,16 +79,16 @@ fancy.message.green "Green message"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.blue "Blue message"
+respect.message.green "Green message"
 ```
 
-![fancy.message.blue](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-blue.png)
+![respect.message.green](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-green.png)
 
-### fancy.message.yellow
+### respect.message.blue
 
-`fancy.message.yellow "param1"`
+`respect.message.blue "param1"`
 
 `param1` Message
 
@@ -116,16 +97,16 @@ fancy.message.blue "Blue message"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.yellow "Yellow message"
+respect.message.blue "Blue message"
 ```
 
-![fancy.message.yellow](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-yellow.png)
+![respect.message.blue](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-blue.png)
 
-### fancy.message.error
+### respect.message.yellow
 
-`fancy.message.error "param1"`
+`respect.message.yellow "param1"`
 
 `param1` Message
 
@@ -134,16 +115,16 @@ fancy.message.yellow "Yellow message"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.error "Error"
+respect.message.yellow "Yellow message"
 ```
 
-![fancy.message.error](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-error.png)
+![respect.message.yellow](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-yellow.png)
 
-### fancy.message.success
+### respect.message.error
 
-`fancy.message.success "param1"`
+`respect.message.error "param1"`
 
 `param1` Message
 
@@ -152,16 +133,16 @@ fancy.message.error "Error"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.success "Success"
+respect.message.error "Error"
 ```
 
-![fancy.message.success](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-success.png)
+![respect.message.error](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-error.png)
 
-### fancy.message.info
+### respect.message.success
 
-`fancy.message.info "param1"`
+`respect.message.success "param1"`
 
 `param1` Message
 
@@ -170,16 +151,16 @@ fancy.message.success "Success"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.info "Info"
+respect.message.success "Success"
 ```
 
-![fancy.message.info](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-info.png)
+![respect.message.success](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-success.png)
 
-### fancy.message.warning
+### respect.message.info
 
-`fancy.message.warning "param1"`
+`respect.message.info "param1"`
 
 `param1` Message
 
@@ -188,16 +169,34 @@ fancy.message.info "Info"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.message.warning "Warning"
+respect.message.info "Info"
 ```
 
-![fancy.message.warning](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-message-warning.png)
+![respect.message.info](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-info.png)
 
-### fancy.title
+### respect.message.warning
 
-`fancy.title "param1"`
+`respect.message.warning "param1"`
+
+`param1` Message
+
+**Sample:**
+
+```bash
+#!/bin/bash
+
+source /path/to/respect.sh
+
+respect.message.warning "Warning"
+```
+
+![respect.message.warning](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-message-warning.png)
+
+### respect.title
+
+`respect.title "param1"`
 
 `param1` Title
 
@@ -206,16 +205,16 @@ fancy.message.warning "Warning"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.title "Title"
+respect.title "Title"
 ```
 
-![fancy.title](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-title.png)
+![respect.title](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-title.png)
 
-### fancy.process
+### respect.process
 
-`fancy.process "param1" "param2"`
+`respect.process "param1" "param2"`
 
 `param1` Process label
 
@@ -230,12 +229,12 @@ If the callback execution is succeeded (it returns `0`).
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.process "Processing something...\t" "callback"
+respect.process "Processing something...\t" "callback"
 ```
 
-![fancy.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-process-ok.png)
+![respect.process](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-process-ok.png)
 
 > P.S: A succeeded callback execution returns `0`. That's a shellscript rule: `0` = true, `1` = false.
 > That's a little weird, I know that, but that's how it is, accept it.
@@ -245,16 +244,16 @@ If the callback execution fails (it returns `1`).
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.process "Processing something...\t" "callback"
+respect.process "Processing something...\t" "callback"
 ```
 
-![fancy.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-process-fail.png)
+![respect.process](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-process-fail.png)
 
-### fancy.prepend.process
+### respect.prepend.process
 
-`fancy.prepend.process "param1" "param2"`
+`respect.prepend.process "param1" "param2"`
 
 `param1` Process label
 
@@ -269,28 +268,28 @@ If the callback execution is succeeded (it returns `0`).
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.prepend.process "Processing something" "callback"
+respect.prepend.process "Processing something" "callback"
 ```
 
-![fancy.prepend.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-prepend-process-ok.png)
+![respect.prepend.process](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-prepend-process-ok.png)
 
 If the callback execution fails (it returns `1`).
 
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.prepend.process "Processing something" "callback"
+respect.prepend.process "Processing something" "callback"
 ```
 
-![fancy.prepend.process](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-prepend-process-fail.png)
+![respect.prepend.process](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-prepend-process-fail.png)
 
-### fancy.label
+### respect.label
 
-`fancy.label "param1" "param2"`
+`respect.label "param1" "param2"`
 
 `param1` Label
 
@@ -301,18 +300,18 @@ fancy.prepend.process "Processing something" "callback"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.label "Label 1" "Value 1"
-fancy.label "Label 2" "Value 2"
-fancy.label "Label 3" "Value 3"
+respect.label "Label 1" "Value 1"
+respect.label "Label 2" "Value 2"
+respect.label "Label 3" "Value 3"
 ```
 
-![fancy.label](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-label.png)
+![respect.label](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-label.png)
 
-### fancy.label.ln
+### respect.label.ln
 
-`fancy.label.ln "param1" "param2"`
+`respect.label.ln "param1" "param2"`
 
 `param1` Label
 
@@ -323,18 +322,18 @@ fancy.label "Label 3" "Value 3"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.label.ln "Label line 1" "Value 1"
-fancy.label.ln "\tLabel line 2" "Value 2"
-fancy.label.ln "\tLabel line 3" "Value 3"
+respect.label.ln "Label line 1" "Value 1"
+respect.label.ln "\tLabel line 2" "Value 2"
+respect.label.ln "\tLabel line 3" "Value 3"
 ```
 
-![fancy.label.ln](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-label-ln.png)
+![respect.label.ln](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-label-ln.png)
 
-### fancy.root_is_required
+### respect.root_is_required
 
-`fancy.root_is_required "param1"`
+`respect.root_is_required "param1"`
 
 `param1` Message
 
@@ -345,36 +344,16 @@ fancy.label.ln "\tLabel line 3" "Value 3"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.root_is_required
+respect.root_is_required
 ```
 
-![fancy.root_is_required](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-root-is-required.png)
+![respect.root_is_required](https://github.com/diogocavilha/respect-shell/blob/master/screenshots/respect-root-is-required.png)
 
-### fancy.die
+### respect.dir_exists
 
-`fancy.die "param1"`
-
-`param1` Message
-
-> param1 is optional
-
-**Sample:**
-
-```bash
-#!/bin/bash
-
-source /path/to/fancy.sh
-
-fancy.die
-```
-
-![fancy.die](https://github.com/diogocavilha/fancy-sh/blob/master/screenshots/fancy-die.png)
-
-### fancy.dir_exists
-
-`fancy.dir_exists "param1"`
+`respect.dir_exists "param1"`
 
 `param1` path
 
@@ -383,17 +362,17 @@ fancy.die
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-if fancy.dir_exists "/path/to/directory"
+if respect.dir_exists "/path/to/directory"
 then
     # code ...
 fi
 ```
 
-### fancy.file_exists
+### respect.file_exists
 
-`fancy.file_exists "param1"`
+`respect.file_exists "param1"`
 
 `param1` path
 
@@ -402,17 +381,17 @@ fi
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-if fancy.file_exists "/path/to/file"
+if respect.file_exists "/path/to/file"
 then
     # code ...
 fi
 ```
 
-### fancy.window.title
+### respect.window.title
 
-`fancy.window.title "param1"`
+`respect.window.title "param1"`
 
 `param1` Window title
 
@@ -421,14 +400,14 @@ fi
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-fancy.window.title "This is the window title"
+respect.window.title "This is the window title"
 ```
 
-### fancy.question.yesno
+### respect.question.yesno
 
-`fancy.question.yesno "param1" "param2"`
+`respect.question.yesno "param1" "param2"`
 
 `param1` Question string.
 
@@ -439,9 +418,9 @@ fancy.window.title "This is the window title"
 ```bash
 #!/bin/bash
 
-source /path/to/fancy.sh
+source /path/to/respect.sh
 
-if fancy.question.yesno "Would you like to proceed?" "y"
+if respect.question.yesno "Would you like to proceed?" "y"
 then
     # code ...
 fi
@@ -452,7 +431,7 @@ fi
 **Yes** as default.
 
 ```bash
-fancy.question.yesno "Would you like to proceed?" "y"
+respect.question.yesno "Would you like to proceed?" "y"
 
 # Would you like to proceed? [Y/n]: 
 ```
@@ -460,7 +439,7 @@ fancy.question.yesno "Would you like to proceed?" "y"
 **No** as default
 
 ```bash
-fancy.question.yesno "Would you like to proceed?" "n"
+respect.question.yesno "Would you like to proceed?" "n"
 
 # Would you like to proceed? [y/N]: 
 ```
@@ -468,7 +447,7 @@ fancy.question.yesno "Would you like to proceed?" "n"
 **No** as default
 
 ```bash
-fancy.question.yesno "Would you like to proceed?"
+respect.question.yesno "Would you like to proceed?"
 
 # Would you like to proceed? [y/N]: 
 ```

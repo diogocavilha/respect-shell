@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Shellscript boilerplate for making better scripts.
+# Shellscript module for writing better scripts.
 # Author: Diogo Alexsander Cavilha <diogocavilha@gmail.com>
 # Date: 02.05.2017
 
@@ -8,62 +8,62 @@
 # Messages
 #
 
-function fancy.message() {
+function respect.message() {
     tput bold
     echo -e " $1"
     tput sgr0
 }
 
-function fancy.message.red() {
+function respect.message.red() {
     tput bold
     tput setaf 1
     echo -e " $1"
     tput sgr0
 }
 
-function fancy.message.yellow() {
+function respect.message.yellow() {
     tput bold
     tput setaf 3
     echo -e " $1"
     tput sgr0
 }
 
-function fancy.message.blue() {
+function respect.message.blue() {
     tput bold
     tput setaf 6
     echo -e " $1"
     tput sgr0
 }
 
-function fancy.message.green() {
+function respect.message.green() {
     tput bold
     tput setaf 2
     echo -e " $1"
     tput sgr0
 }
 
-function fancy.message.error() {
+function respect.message.error() {
     tput bold
     tput setaf 1
     echo -e " ✖ $1"
     tput sgr0
 }
 
-function fancy.message.warning() {
+function respect.message.warning() {
     tput bold
     tput setaf 3
     echo -e " ⚠ $1"
     tput sgr0
 }
 
-function fancy.message.info() {
+function respect.message.info() {
     tput bold
     tput setaf 6
     echo -e " ⓘ $1"
     tput sgr0
 }
 
-function fancy.message.success() {
+function respect.message.success() {
     tput bold
     tput setaf 2
     echo -e " ✔ $1"
@@ -79,7 +79,7 @@ function fancy.message.success() {
 # Returned value:
 #   0 - File exists.
 #   1 - File does not exist.
-function fancy.file_exists() {
+function respect.file_exists() {
     if [ -e "$1" ]; then
         return 0
     fi
@@ -91,14 +91,14 @@ function fancy.file_exists() {
 # Returned value:
 #   0 - Diretory exists.
 #   1 - Diretory does not exist.
-function fancy.dir_exists() {
+function respect.dir_exists() {
     if [ -d "$1" ]; then
         return 0
     fi
     return 1
 }
 
-function fancy.root_is_required() {
+function respect.root_is_required() {
     local message=""
     
     message=${1:-You need to be root.}
@@ -111,8 +111,8 @@ function fancy.root_is_required() {
     fi
 }
 
-# fancy.process "label" "callback"
-function fancy.process() {
+# respect.process "label" "callback"
+function respect.process() {
     local label=""
     local callback=""
     
@@ -123,29 +123,29 @@ function fancy.process() {
 
     if eval "$callback"
     then
-        _fancy.process.ok
+        __respect.process.ok
         return
     fi
 
-    _fancy.process.fail
+    __respect.process.fail
 }
 
-function _fancy.process.ok() {
+function __respect.process.ok() {
     tput bold
     tput setaf 2
     echo -e " [  OK  ]"
     tput sgr0
 }
 
-function _fancy.process.fail() {
+function __respect.process.fail() {
     tput bold
     tput setaf 1
     echo -e " [ FAIL ]"
     tput sgr0
 }
 
-# fancy.prepend.process "label" "callback"
-function fancy.prepend.process() {
+# respect.prepend.process "label" "callback"
+function respect.prepend.process() {
     local label=""
     local callback=""
     local yellow=""
@@ -160,28 +160,28 @@ function fancy.prepend.process() {
 
     if eval "$callback"
     then
-        _fancy.prepend.process.ok
+        __respect.prepend.process.ok
         return
     fi
 
-    _fancy.prepend.process.fail
+    __respect.prepend.process.fail
 }
 
-function _fancy.prepend.process.ok() {
+function __respect.prepend.process.ok() {
     tput bold
     tput setaf 2
     echo -e "\r [  OK  ]"
     tput sgr0
 }
 
-function _fancy.prepend.process.fail() {
+function __respect.prepend.process.fail() {
     tput bold
     tput setaf 1
     echo -e "\r [ FAIL ]"
     tput sgr0
 }
 
-function fancy.label() {
+function respect.label() {
     local label=""
     local value=""
     
@@ -194,7 +194,7 @@ function fancy.label() {
     echo -e "$value"
 }
 
-function fancy.label.ln() {
+function respect.label.ln() {
     local label=""
     local value=""
     
@@ -207,7 +207,7 @@ function fancy.label.ln() {
     echo -en "$value"
 }
 
-function fancy.title() {
+function respect.title() {
     local title=${1:-No title}
     tput bold
     tput setaf 3
@@ -215,22 +215,11 @@ function fancy.title() {
     tput sgr0
 }
 
-function fancy.die() {
-    local message=""
-    
-    message=${1:-Something went wrong! Script has stopped.}
-    
-    echo ""
-    fancy.message.red "$message"
-    echo ""
-    exit 1
-}
-
-function fancy.window.title() {
+function respect.window.title() {
     printf "\e]2;%s\a" "$1";
 }
 
-function fancy.question.yesno() {
+function respect.question.yesno() {
     local yesno=${2:-n}
     local options="[y/N]"
     local response=""
