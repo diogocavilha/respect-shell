@@ -377,9 +377,7 @@ respect.label.ln "\tLabel line 3" "Value 3"
 respect.root_is_required "param1"
 ```
 
-- `param1` Message
-
-> param1 is optional
+- `param1` (Optional) Message
 
 **Sample:**
 
