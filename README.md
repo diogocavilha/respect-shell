@@ -34,7 +34,9 @@ See what is possible to do once you're using **Respect Shell**.
 
 ## respect.message
 
-`respect.message "param1"`
+```bash
+respect.message "param1"
+```
 
 `param1` Message
 
@@ -52,7 +54,9 @@ respect.message "Normal message"
 
 ## respect.message.red
 
-`respect.message.red "param1"`
+```bash
+respect.message.red "param1"
+```
 
 `param1` Message
 
@@ -70,7 +74,9 @@ respect.message.red "Red message"
 
 ## respect.message.green
 
-`respect.message.green "param1"`
+```bash
+respect.message.green "param1"
+```
 
 `param1` Message
 
@@ -88,7 +94,9 @@ respect.message.green "Green message"
 
 ## respect.message.blue
 
-`respect.message.blue "param1"`
+```bash
+respect.message.blue "param1"
+```
 
 `param1` Message
 
@@ -106,7 +114,9 @@ respect.message.blue "Blue message"
 
 ## respect.message.yellow
 
-`respect.message.yellow "param1"`
+```bash
+respect.message.yellow "param1"
+````
 
 `param1` Message
 
@@ -124,7 +134,9 @@ respect.message.yellow "Yellow message"
 
 ## respect.message.error
 
-`respect.message.error "param1"`
+```bash
+respect.message.error "param1"
+```
 
 `param1` Message
 
@@ -142,7 +154,9 @@ respect.message.error "Error"
 
 ## respect.message.success
 
-`respect.message.success "param1"`
+```bash
+respect.message.success "param1"
+```
 
 `param1` Message
 
@@ -160,7 +174,9 @@ respect.message.success "Success"
 
 ## respect.message.info
 
-`respect.message.info "param1"`
+```bash
+respect.message.info "param1"
+```
 
 `param1` Message
 
@@ -178,7 +194,9 @@ respect.message.info "Info"
 
 ## respect.message.warning
 
-`respect.message.warning "param1"`
+```bash
+respect.message.warning "param1"
+```
 
 `param1` Message
 
@@ -196,7 +214,9 @@ respect.message.warning "Warning"
 
 ## respect.title
 
-`respect.title "param1"`
+```bash
+respect.title "param1"
+```
 
 `param1` Title
 
@@ -214,7 +234,9 @@ respect.title "Title"
 
 ## respect.process
 
-`respect.process "param1" "param2"`
+```bash
+respect.process "param1" "param2"
+```
 
 `param1` Process label
 
@@ -253,7 +275,9 @@ respect.process "Processing something...\t" "callback"
 
 ## respect.prepend.process
 
-`respect.prepend.process "param1" "param2"`
+```bash
+respect.prepend.process "param1" "param2"
+```
 
 `param1` Process label
 
@@ -289,7 +313,9 @@ respect.prepend.process "Processing something" "callback"
 
 ## respect.label
 
-`respect.label "param1" "param2"`
+```bash
+respect.label "param1" "param2"
+```
 
 `param1` Label
 
@@ -311,7 +337,9 @@ respect.label "Label 3" "Value 3"
 
 ## respect.label.ln
 
-`respect.label.ln "param1" "param2"`
+```bash
+respect.label.ln "param1" "param2"
+```
 
 `param1` Label
 
@@ -333,7 +361,9 @@ respect.label.ln "\tLabel line 3" "Value 3"
 
 ## respect.root_is_required
 
-`respect.root_is_required "param1"`
+```bash
+respect.root_is_required "param1"
+```
 
 `param1` Message
 
@@ -353,7 +383,9 @@ respect.root_is_required
 
 ## respect.dir_exists
 
-`respect.dir_exists "param1"`
+```bash
+respect.dir_exists "param1"
+```
 
 `param1` path
 
@@ -372,7 +404,9 @@ fi
 
 ## respect.file_exists
 
-`respect.file_exists "param1"`
+```bash
+respect.file_exists "param1"
+```
 
 `param1` path
 
@@ -391,7 +425,9 @@ fi
 
 ## respect.window.title
 
-`respect.window.title "param1"`
+```bash
+respect.window.title "param1"
+```
 
 `param1` Window title
 
@@ -407,7 +443,9 @@ respect.window.title "This is the window title"
 
 ## respect.question.yesno
 
-`respect.question.yesno "param1" "param2"`
+```bash
+respect.question.yesno "param1" "param2"
+```
 
 `param1` Question string.
 
