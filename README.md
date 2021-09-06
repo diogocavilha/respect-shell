@@ -1,10 +1,10 @@
-[![Shell Check](https://github.com/diogocavilha/respect-shell/workflows/Code%20Style%20Check/badge.svg)](https://github.com/diogocavilha/respect-shell/actions)
-
 <p align="center">
   <br>
     <img src="https://github.com/diogocavilha/respect-shell/blob/master/images/respect-shell.png" />
   <br>
 </p>
+
+[![Shell Check](https://github.com/diogocavilha/respect-shell/workflows/Code%20Style%20Check/badge.svg)](https://github.com/diogocavilha/respect-shell/actions)
 
 A simple shell module for helping you to write better scripts.
 With this little module you can use some functions that allow you to showing cool messages and performing some verifications as simple as it should be.
